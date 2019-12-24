@@ -10,13 +10,16 @@ package utils.cache;
 public class CacheNode {
     int key;
     int value;
+    long expired;
+
     CacheNode prev;
     CacheNode next;
 
-    public CacheNode(int key, int value) {
+    public CacheNode(int key, int value, long exp) {
         this.key = key;
         this.value = value;
-        prev  = this;
-        next  = this;
+        this.expired = exp;
+        prev = this;
+        next = this;
     }
 }

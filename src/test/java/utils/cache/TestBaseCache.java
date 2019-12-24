@@ -12,17 +12,23 @@ import org.junit.Test;
 public class TestBaseCache {
 
     @Test
-    public void TestPutCacheUseTtl() {
-        BaseCache baseCache = new BaseCache(1000000);
-        int index = 1;
+    public void TestPutCacheUseTtl() throws InterruptedException {
+        BaseCache baseCache = new BaseCache(10000);
         baseCache.put(1, 1);
         baseCache.put(2, 1);
         baseCache.put(3, 1);
         baseCache.put(4, 1);
         baseCache.put(5, 1);
+        baseCache.put(100, 5,3);
 
 
-        System.out.println(baseCache.get(1));
+
+        System.out.println("[没有过期前] GetCache = " + baseCache.get(100));
+        System.out.println("[没有过期前] Get Cache Size = "+baseCache.size());
+
+        Thread.sleep(4000);
+        System.out.println("[过期后] Get Cache Size = "+baseCache.size());
+        System.out.println("[过期后] GetCache = " + baseCache.get(100));
         ;
 
 
