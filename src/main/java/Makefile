@@ -6,6 +6,8 @@ targets = $(outdir)/libINotify.so
 
 ARCH = linux
 
+JAVA_JDK=/usr/lib/jvm/java-8-openjdk-amd64
+
 CFLAGS=-I${JAVA_JDK}/include -I${JAVA_JDK}/include/${ARCH} -fPIC # -DDEBUG=1
 
 .SUFFIXES: all clean

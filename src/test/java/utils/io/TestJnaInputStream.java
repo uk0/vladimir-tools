@@ -64,7 +64,7 @@ public class TestJnaInputStream {
 
 
 
-    @Test
+//    @Test
     public void TestWriteFile() throws IOException, InterruptedException {
 
 

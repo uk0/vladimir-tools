@@ -16,10 +16,10 @@ import java.nio.file.Paths;
  * @since JDK1.8.
  */
 public class TestWatchFile {
-    //
+    //should be public
     @Test
-    void TestWatch1() throws IOException {
-        Path dir = Paths.get("/Users/zhangjianxin/home/development/code/github/vladimir/src/main/resources");
+    public void TestWatch1() throws IOException {
+        Path dir = Paths.get("/Users/zhangjianxin/home/development/code/github/vladimir");
         new PathObservables(dir).processEvents(new IInotify() {
             @Override
             public void create(Object o) {

@@ -11,7 +11,7 @@ import org.junit.Test;
  */
 public class TestBaseCache {
 
-    @Test
+//    @Test
     public void TestPutCacheUseTtl() throws InterruptedException {
         BaseCache baseCache = new BaseCache(10000);
         baseCache.put(1, 1);

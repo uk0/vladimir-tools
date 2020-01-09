@@ -22,7 +22,7 @@ public class TestMmapRWFIle {
 
     private Mmap m;
 
-    @Before
+//    @Before
     public void InitIO() throws IOException {
         m = new Mmap();
         m.init("/tmp/temp_jvm");
@@ -68,7 +68,7 @@ public class TestMmapRWFIle {
     };
 
 
-    @Test
+//    @Test
     public void Test() throws InterruptedException, IOException {
         System.out.println(Util.getFreeMemory());
         executor.execute(runnableW);

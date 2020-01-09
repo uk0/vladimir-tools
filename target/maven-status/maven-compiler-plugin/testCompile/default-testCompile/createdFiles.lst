@@ -1,1 +1,8 @@
+utils/io/TestMmapRWFIle$2.class
+utils/io/TestJnaInputStream.class
+utils/io/TestJnaInputStream$1.class
+utils/linux/TestWatchFile.class
 utils/linux/TestWatchFile$1.class
+utils/io/TestMmapRWFIle$1.class
+utils/io/TestMmapRWFIle.class
+utils/cache/TestBaseCache.class
